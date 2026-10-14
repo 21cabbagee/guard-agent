@@ -1,9 +1,13 @@
 import React from 'react';
 import { Shield, Lock, ShieldAlert, ArrowRight, Zap, Database, Terminal, CheckCircle2 } from 'lucide-react';
+import ParticlesCanvas from './ParticlesCanvas';
 
 export default function Hero({ onJumpToProxy, onJumpToPolicies }) {
   return (
     <section className="relative pt-12 pb-8 overflow-hidden">
+      {/* Casberry-inspired Particles WebGL Canvas */}
+      <ParticlesCanvas particleColor="244, 63, 94" particleCount={50} />
+
       {/* Background radial glows */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-guard-600/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-shield-600/15 rounded-full blur-2xl pointer-events-none" />

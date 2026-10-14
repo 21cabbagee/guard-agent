@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import PolicyRuleEditor from './components/PolicyRuleEditor';
 import ToolInterceptorProxy from './components/ToolInterceptorProxy';
 import AuditTrailManifest from './components/AuditTrailManifest';
+import OutcomeChart from './components/OutcomeChart';
 import CabModal from './components/CabModal';
 import Footer from './components/Footer';
 import { INITIAL_POLICIES, INITIAL_AUDIT_LOGS } from './data/mockSecurityData';
@@ -52,6 +53,9 @@ export default function App() {
           onJumpToProxy={scrollToProxy}
           onJumpToPolicies={scrollToPolicies}
         />
+
+        {/* Julien Bek $1:$6 Economic Engine / Larry Ellison SLA Proof */}
+        <OutcomeChart onCtaClick={() => setIsCabOpen(true)} />
 
         {/* Live Tool Call Interceptor Proxy & Security Sandbox */}
         <ToolInterceptorProxy
